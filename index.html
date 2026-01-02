@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-wrapper">
+        <video id="video-box" loop>
+          <source
+            src="https://cdn.pixabay.com/video/2025/10/04/307864_large.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div class="pause">
+          <i class="fa-solid fa-pause"></i>
+          <i class="fa-solid fa-play" style="display: none"></i>
+        </div>
+
+        <div class="side-bar">
+          <div class="side-icon">
+            <i class="fa-regular fa-heart"></i><span>1.2M</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-solid fa-comment"></i><span>45K</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-solid fa-bookmark"></i><span>Kaydet</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-solid fa-share"></i><span>Paylaş</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+
+        <div class="video-info">
+          <h3>
+            <img
+              src="https://img.antoloji.com/media/sair_resimleri/09/128709_o_4675.png"
+            />
+            @kahramanmetin
+            <button class="follow-btn">Takip Et</button>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. #test
+            #shorts
+          </p>
+          <div class="music-info">
+            <i class="fa-solid fa-music"></i>
+            <marquee scrollamount="3">Kahraman Metin - Orijinal Ses</marquee>
+          </div>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
