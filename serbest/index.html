@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-wrapper">
+        <video id="video-box" autoplay loop>
+          <source src="karanlik_yolculuk.mp4" type="video/mp4" />
+        </video>
+
+        <div class="side-bar">
+          <div class="side-icon">
+            <i class="fa-regular fa-heart"></i><span>241B</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-regular fa-comment" id="comment-btn"></i
+            ><span>4,124</span>
+          </div>
+
+          <div class="side-icon">
+            <input
+              type="checkbox"
+              id="bookmark-trigger"
+              class="bookmark-checkbox"
+            />
+
+            <label for="bookmark-trigger" class="bookmark-label">
+              <i class="fa-regular fa-bookmark"></i>
+            </label>
+
+            <span>Kaydet</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-regular fa-paper-plane"></i><span>Paylaş</span>
+          </div>
+          <div class="side-icon">
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+
+        <div class="video-info">
+          <h3>
+            <img
+              src="https://avatar.vkplay.ru/avatar/263841654.jpeg?width=180&height=180"
+            />
+            @khrmnnn00988
+            <button class="follow-btn">Takip Et</button>
+          </h3>
+          <p>
+            Yardım et bana, Tanrım! nereye gideyim.. #shorts #felsefe
+            #karanlikyolculuk
+          </p>
+          <div class="music-info">
+            <i class="fa-solid fa-music"></i>
+            <marquee scrollamount="4" direction="left">Kahraman Metin</marquee>
+          </div>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comments-header">
+          <span>Yorumlar (4,124)</span>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="cmnt-main">
+          <div class="comment-item">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="user"
+            />
+            <div class="comment-content">
+              <h4>yusuftalhabelgin <span> 5s</span></h4>
+              <p>serbest..</p>
+              <div class="comment-yorum">
+                <i class="fa-regular fa-heart" id="main-heart"></i
+                ><span>463</span>
+                <span class="reply-text">Yanıtla</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-input">
+          <input type="text" placeholder="Yorum ekle..." />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
